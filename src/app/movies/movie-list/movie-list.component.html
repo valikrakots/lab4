@@ -1,0 +1,16 @@
+
+<div *ngIf="selectedMovie" class="px-5 py-3">
+  <h5>Film name: {{selectedMovie.name | uppercase}}</h5>
+  <div class="py-3 px-2">
+    <p>Film director: {{selectedMovie.director}}</p>
+    <p>Film date: {{selectedMovie.date}}</p>
+  </div>
+</div>
+<div>
+    <ul class="movies list-group">
+      <li *ngFor="let movie of movies">
+        <button type="button" (click)="onSelect(movie)" class="mx-5 my-2">{{ movie.id }} {{ movie.name }}</button>
+      </li>
+    </ul>
+</div>
+

@@ -1,0 +1,29 @@
+<form #contactForm="ngForm" (ngSubmit)="onSubmit()" class="px-5 py-2">
+
+  <p>
+    <label for="id" class="px-2">ID</label>
+    <input type="number" name="id" ngModel>
+  </p>
+
+  <p>
+    <label for="name" class="px-2">Name</label>
+    <input type="text" name="name" ngModel>
+  </p>
+
+  <p>
+    <label for="director" class="px-2">Director</label>
+    <input type="text" name="director" ngModel>
+  </p>
+
+
+  <p>
+    <label for="date" class="px-2">Date</label>
+    <input type="text" name="date" ngModel>
+  </p>
+
+
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+
+</form>
